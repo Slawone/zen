@@ -1,16 +1,18 @@
 import data from '../data/data.js';
 
 const section = document.createElement('section');
-const sectionTitle = document.createElement('h1');
-const sectionCopy = document.createElement('p');
-const sectionImage = document.createElement('img');
+const title = document.createElement('h1');
+const copy = document.createElement('p');
+const image = document.createElement('img');
 
-sectionTitle.textContent = `${data.sectionPrimary.title.data}`;
-sectionCopy.textContent = `${data.sectionPrimary.texts}`;
-sectionImage.src = `${data.sectionPrimary.image.source}`;
-sectionImage.alt = `${data.sectionPrimary.image.alternate}`;
-sectionImage.style.width = '100%'; 
+title.textContent = data.sectionPrimary.title.data;
 
-section.append(sectionTitle, sectionCopy, sectionImage);
+copy.textContent = data.sectionPrimary.texts;
+
+image.src = data.sectionPrimary.image.source;
+image.alt = data.sectionPrimary.image.alternate;
+image.style.width = '100%'; 
+
+section.append(title, copy, image);
 
 export default section;

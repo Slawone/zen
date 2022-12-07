@@ -55,42 +55,44 @@ const data = {
     button: {
       data: 'Order a consultation',
       type: 'button',
-    }
+    },
   },
-  sectionQuinary: [
-    {
-      source: './img/clients/brand1.svg',
-      alternate: 'rosegal',
-    },
-    {
-      source: './img/clients/brand2.svg',
-      alternate: 'gearbest',
-    },
-    {
-      source: './img/clients/brand3.svg',
-      alternate: 'allegro',
-    },
-    {
-      source: './img/clients/brand4.svg',
-      alternate: 'aliexpress',
-    },
-    {
-      source: './img/clients/brand5.svg',
-      alternate: 'booking',
-    },
-    {
-      source: './img/clients/brand6.svg',
-      alternate: 'mediamarkt',
-    },
-    {
-      source: './img/clients/brand7.svg',
-      alternate: 'rtveuroagd',
-    },
-    {
-      source: './img/clients/brand8.svg',
-      alternate: 'groupon',
-    },
-  ],
+  sectionQuinary: {
+    images: [
+      {
+        source: './img/clients/brand1.svg',
+        alternate: 'rosegal',
+      },
+      {
+        source: './img/clients/brand2.svg',
+        alternate: 'gearbest',
+      },
+      {
+        source: './img/clients/brand3.svg',
+        alternate: 'allegro',
+      },
+      {
+        source: './img/clients/brand4.svg',
+        alternate: 'aliexpress',
+      },
+      {
+        source: './img/clients/brand5.svg',
+        alternate: 'booking',
+      },
+      {
+        source: './img/clients/brand6.svg',
+        alternate: 'mediamarkt',
+      },
+      {
+        source: './img/clients/brand7.svg',
+        alternate: 'rtveuroagd',
+      },
+      {
+        source: './img/clients/brand8.svg',
+        alternate: 'groupon',
+      },
+    ],
+  },
   footer: ''
 };
 
