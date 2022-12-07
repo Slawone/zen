@@ -1,9 +1,9 @@
-import sectionPrimary from './sections/sectionPrimary.js';
-import sectionSecondary from './sections/sectionSecondary.js';
-import sectionTertiary from './sections/sectionTertiary.js';
-import sectionQuaternary from './sections/sectionQuatenary.js';
-import sectionQuinary from './sections/sectionQuinary.js';
+import data from './data/data.js';
+import Section from './components/Section.js';
 
 const $root = document.querySelector('#root');
 
-$root.append(sectionPrimary, sectionSecondary, sectionTertiary, sectionQuaternary, sectionQuinary);
+$root.insertAdjacentHTML('beforeend', Section(data.sectionPrimary));
+
+// console.log(data);
+// console.log($root);
