@@ -3,11 +3,13 @@ import Text from './Text.js';
 import Image from './Image.js';
 
 const Section = (section) => {
+  const className = section.name;
+
   return `
-    <section>
-      ${Title(section.title)}
-      ${section.texts.map(text => Text(text)).join('')}
-      ${Image(section.image)}
+    <section class="${className}">
+      ${Title(section.title, className)}
+      ${section.texts.map(text => Text(text, className)).join('')}
+      ${Image(section.image, className)}
     </section>
   `
 };

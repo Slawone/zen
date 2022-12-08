@@ -1,6 +1,13 @@
-const Text = (text) => {
+const Text = (text, parrentClassName) => {
+  
+  const className = parrentClassName 
+    ? `${parrentClassName}__copy` 
+    : 'copy';
+
   return `
-    <p>${text}</p>
+    <p class="${className}">
+      ${text}
+    </p>
   `
 };
 

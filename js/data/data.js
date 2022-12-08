@@ -1,6 +1,9 @@
 const data = {
-  header: '',
+  header: {
+    name: 'header',
+  },
   sectionPrimary: {
+    name: 'download',
     title: {
       data: 'Peaceful shopping mindful money',
       priority: 1,
@@ -11,9 +14,10 @@ const data = {
     image: {
       source: './img/1.jpg',
       alternate: 'section download',
-    }
+    },
   },
   sectionSecondary: {
+    name: 'warranty',
     title: {
       data: '1-year warranty boost',
       priority: 2,
@@ -25,9 +29,10 @@ const data = {
     image: {
       source: './img/2.jpg',
       alternate: 'section warranty',
-    }
+    },
   },
   sectionTertiary: {
+    name: 'care',
     title: {
       data: 'ZEN Care',
       priority: 2,
@@ -40,9 +45,10 @@ const data = {
     image: {
       source: './img/3.jpg',
       alternate: 'section care',
-    }
+    },
   },
   sectionQuaternary: {
+    name: 'cashback',
     title: {
       data: 'and cashback!',
       priority: 2,
@@ -58,6 +64,7 @@ const data = {
     },
   },
   sectionQuinary: {
+    name: 'clients',
     images: [
       {
         source: './img/clients/brand1.svg',
@@ -93,7 +100,9 @@ const data = {
       },
     ],
   },
-  footer: ''
+  footer: {
+    name: 'footer',
+  },
 };
 
 export default data;
