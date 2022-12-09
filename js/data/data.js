@@ -2,7 +2,7 @@ const data = {
   header: {
     name: 'header',
   },
-  sectionPrimary: {
+  download: {
     name: 'download',
     title: {
       data: 'Peaceful shopping mindful money',
@@ -16,7 +16,7 @@ const data = {
       alternate: 'section download',
     },
   },
-  sectionSecondary: {
+  warranty: {
     name: 'warranty',
     title: {
       data: '1-year warranty boost',
@@ -31,7 +31,7 @@ const data = {
       alternate: 'section warranty',
     },
   },
-  sectionTertiary: {
+  care: {
     name: 'care',
     title: {
       data: 'ZEN Care',
@@ -47,7 +47,7 @@ const data = {
       alternate: 'section care',
     },
   },
-  sectionQuaternary: {
+  cashback: {
     name: 'cashback',
     title: {
       data: 'and cashback!',
@@ -63,7 +63,7 @@ const data = {
       type: 'button',
     },
   },
-  sectionQuinary: {
+  clients: {
     name: 'clients',
     images: [
       {
