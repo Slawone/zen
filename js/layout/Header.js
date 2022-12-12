@@ -1,0 +1,29 @@
+import Logo from '../ui/Logo.js';
+import MoonIcon from '../ui/MoonIcon.js';
+import BurgerIcon from '../ui/BurgerIcon.js';
+import Menu from '../components/Menu.js';
+
+const Header = (header) => {
+  const className = header.name;
+  
+  return `
+    <header class="${className}">
+      <div class="container">
+        <div class="${className}__wrapper">
+          <nav class="${className}__nav">
+            ${Logo()}
+            ${Menu(header.navigations, className)}
+          </nav>
+          <button class="theme" data-btn="theme">
+            ${MoonIcon()}
+          </button>
+          <button class="burger" data-btn="burger">
+            ${BurgerIcon()}
+          </button>
+        </div>
+      </div>
+    </header>
+  `
+};
+
+export default Header;

@@ -1,6 +1,28 @@
 const data = {
   header: {
     name: 'header',
+    navigations: [
+      {
+        data: 'Download',
+        target: 'download',
+      },
+      {
+        data: 'Warranty',
+        target: 'warranty',
+      },
+      {
+        data: 'Care',
+        target: 'care',
+      },
+      {
+        data: 'Cashback',
+        target: 'cashback',
+      },
+      {
+        data: 'clients',
+        target: 'clients',
+      },
+    ],
   },
   download: {
     name: 'download',
