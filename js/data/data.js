@@ -19,7 +19,7 @@ const data = {
         target: 'cashback',
       },
       {
-        data: 'clients',
+        data: 'Clients',
         target: 'clients',
       },
     ],
@@ -87,7 +87,7 @@ const data = {
   },
   clients: {
     name: 'clients',
-    images: [
+    clients: [
       {
         source: './img/clients/brand1.svg',
         alternate: 'rosegal',

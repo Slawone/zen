@@ -7,11 +7,11 @@ const Clients = (section) => {
     <section class="${className}">
       <div class="container">
         <div class="${className}__wrapper">
-          ${section.images ? section.images.map(image => Image(image, className)).join('') : ''}
+          ${section.clients ? section.clients.map(client => Image(client, className)).join('') : ''}
         </div>
       </div>
     </section>
-  `
+  `;
 };
 
 export default Clients;

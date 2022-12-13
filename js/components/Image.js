@@ -1,8 +1,18 @@
-const Image = (image, parrentClassName) => {
-  
+/**
+ * @param {object} image 
+ * @param {string} parrentClassName 
+ * @returns {string}
+ */
+
+const Image = (image, parrentClassName) => {  
+
+  if(!Object.keys(image).length) {
+    return '';
+  };
+
   const className = parrentClassName
     ? `${parrentClassName}__image`
-    : 'image';
+    : 'image'; 
 
   return `
     <img

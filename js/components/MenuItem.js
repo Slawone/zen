@@ -1,17 +1,18 @@
 /**
- * @param {array} items 
+ * @param {object} item
+ * @param {string} parrentClassName
  * @returns {string}
  */
 
-const Menuitem = (items) => {
+import Button from './Button.js';
+
+const Menuitem = (item, parrentClassname) => {
+  const className = parrentClassname ? parrentClassname : ''
+
   return `
-    ${items.map(item => {
-      return `
-        <li>
-          <button>${item.data}</button>
-        </li>
-      `
-    }).join('')}
+    <li class="${parrentClassname}__item">
+      ${Button(item)}
+    </li>
   `
 };
 

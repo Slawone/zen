@@ -1,20 +1,20 @@
 /**
  * @param {array} lists
- * @param {string} parrentClassname
+ * @param {string} parrentClassName
  * @returns {string}
  */
 
 import MenuItem from "./MenuItem.js";
 
-const Menu = (lists, parrentClassname) => {
+const Menu = (items, parrentClassname) => {
 
   const className = parrentClassname
     ? `${parrentClassname}__list` 
-    : 'list';
+    : 'menu';
 
   return `
     <ul class="${className}">
-      ${MenuItem(lists)}
+      ${items.map(item => MenuItem(item, className)).join('')}
     </ul>
   `
 };

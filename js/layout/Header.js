@@ -1,4 +1,4 @@
-import Logo from '../ui/Logo.js';
+import Logo from '../components/Logo.js';
 import MoonIcon from '../ui/MoonIcon.js';
 import BurgerIcon from '../ui/BurgerIcon.js';
 import Menu from '../components/Menu.js';
@@ -12,7 +12,7 @@ const Header = (header) => {
         <div class="${className}__wrapper">
           <nav class="${className}__nav">
             ${Logo()}
-            ${Menu(header.navigations, className)}
+            ${Menu(header.navigations)}
           </nav>
           <button class="theme" data-btn="theme">
             ${MoonIcon()}
