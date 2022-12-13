@@ -1,10 +1,10 @@
+import MenuItem from "./MenuItem.js";
+
 /**
  * @param {array} lists
  * @param {string} parrentClassName
  * @returns {string}
  */
-
-import MenuItem from "./MenuItem.js";
 
 const Menu = (items, parrentClassname) => {
 

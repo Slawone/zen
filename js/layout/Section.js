@@ -2,6 +2,11 @@ import Title from '../components/Title.js';
 import Text from '../components/Text.js';
 import Image from '../components/Image.js';
 
+/**
+ * @param {object} section;
+ * @returns {string};
+ */
+
 const Section = (section) => {
   const className = section.name;
 

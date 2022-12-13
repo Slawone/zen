@@ -4,14 +4,13 @@
  * @returns {string}
  */
 
-import Button from './Button.js';
 
 const Menuitem = (item, parrentClassname) => {
   const className = parrentClassname ? parrentClassname : ''
 
   return `
     <li class="${parrentClassname}__item">
-      ${Button(item)}
+      <button data-btn="${item.target}">${item.data}</button>
     </li>
   `
 };

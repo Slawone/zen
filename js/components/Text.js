@@ -1,3 +1,9 @@
+/**
+ * @param {string} text 
+ * @param {string} parrentClassName 
+ * @returns {string}
+ */
+
 const Text = (text, parrentClassName) => {
   
   const className = parrentClassName 

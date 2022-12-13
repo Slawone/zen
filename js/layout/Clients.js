@@ -1,5 +1,10 @@
 import Image from '../components/Image.js';
 
+/** 
+ * @param {object} section;
+ * @returns {string};
+ */
+
 const Clients = (section) => {
   const className = section.name;
 

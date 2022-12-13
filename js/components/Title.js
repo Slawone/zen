@@ -1,3 +1,9 @@
+/**
+ * @param {object} title; 
+ * @param {string} parrentClassName;
+ * @returns {string};
+ */
+
 const Title = (title, parrentClassName) => {
   
   const className = parrentClassName

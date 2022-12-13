@@ -124,6 +124,52 @@ const data = {
   },
   footer: {
     name: 'footer',
+    columns: [
+      {
+        title: 'Learn',
+        links: [
+          'Help Center',
+          'Join ZEN team',
+          'Privacy Policy',
+          'Cookies',
+          'Terms of use',
+        ],
+      },
+      {
+        title: 'Discover',
+        links: [
+          'For developers',
+          'Apple Pay',
+          'Google Pay',
+        ],
+      },
+      {
+        title: 'Offer',
+        links: [
+          'Business',
+          'Personal',
+        ],
+      },
+      {
+        title: 'Language',
+        links: [
+          'English',
+          'Polish',
+        ]
+      },
+    ],
+    info: {
+      logo: '',
+      texts: [
+        'ZEN.COM is a licensed financial institution under the supervision of the Central Bank of Lithuania approved by European Banking Authority for 31 countries.',
+        'Registration number of the company 304749651, VAT ID LT100011714916.',
+        'License of electronic money institutions number LB000457.',
+        'Share capital 2.185.000,00 EUR.',
+        'Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.',
+        'Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.',
+      ],
+      copyright: '',
+    }
   },
 };
 

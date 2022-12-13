@@ -1,11 +1,11 @@
-/**
- * @param {object} cashback
- * @returns {string}
- */
-
 import Title from '../components/Title.js';
 import Text from '../components/Text.js';
 import Button from '../components/Button.js';
+
+/**
+ * @param {object} cashback;
+ * @returns {string};
+ */
 
 const Cashback = (cashback) => {
 
