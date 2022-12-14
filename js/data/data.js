@@ -89,35 +89,35 @@ const data = {
     name: 'clients',
     clients: [
       {
-        source: './img/clients/brand1.svg',
+        source: './img/clients/light/brand1.svg',
         alternate: 'rosegal',
       },
       {
-        source: './img/clients/brand2.svg',
+        source: './img/clients/light/brand2.svg',
         alternate: 'gearbest',
       },
       {
-        source: './img/clients/brand3.svg',
+        source: './img/clients/light/brand3.svg',
         alternate: 'allegro',
       },
       {
-        source: './img/clients/brand4.svg',
+        source: './img/clients/light/brand4.svg',
         alternate: 'aliexpress',
       },
       {
-        source: './img/clients/brand5.svg',
+        source: './img/clients/light/brand5.svg',
         alternate: 'booking',
       },
       {
-        source: './img/clients/brand6.svg',
+        source: './img/clients/light/brand6.svg',
         alternate: 'mediamarkt',
       },
       {
-        source: './img/clients/brand7.svg',
+        source: './img/clients/light/brand7.svg',
         alternate: 'rtveuroagd',
       },
       {
-        source: './img/clients/brand8.svg',
+        source: './img/clients/light/brand8.svg',
         alternate: 'groupon',
       },
     ],
@@ -125,41 +125,116 @@ const data = {
   footer: {
     name: 'footer',
     columns: [
-      {
-        title: 'Learn',
+      { 
+        title: {
+          data: 'Learn',
+          priority: 3,
+        },
         links: [
-          'Help Center',
-          'Join ZEN team',
-          'Privacy Policy',
-          'Cookies',
-          'Terms of use',
+          {
+            data: 'Help center',
+            url: 'https://ya.ru/',
+          },
+          {
+            data: 'Join ZEN team',
+            url: 'https://ya.ru/',
+          },
+          {
+            data: 'Privacy Policy',
+            url: 'https://ya.ru/',
+          },
+          {
+            data: 'Cookies',
+            url: 'https://ya.ru/',
+          },
+          {
+            data: 'Terms of use',
+            url: 'https://ya.ru/',
+          },
         ],
       },
       {
-        title: 'Discover',
+        title: {
+          data: 'Discover',
+          priority: 3,
+        },
         links: [
-          'For developers',
-          'Apple Pay',
-          'Google Pay',
+          {
+            data: 'For developers',
+            url: '#',
+          },
+          {
+            data: 'Apple Pay',
+            url: '#',
+          },
+          {
+            data: 'Google Pay',
+            url: '#',
+          },
         ],
       },
       {
-        title: 'Offer',
+        title: {
+          data: 'Offer',
+          priority: 3,
+        },
         links: [
-          'Business',
-          'Personal',
+          {
+            data: 'Business',
+            url: '#',
+          },
+          {
+            data: 'Personal',
+            url: '#',
+          },
         ],
       },
       {
-        title: 'Language',
+        title: {
+          data: 'Language',
+          priority: 3,
+        },
         links: [
-          'English',
-          'Polish',
-        ]
+          {
+            data: 'English',
+            url: '#',
+          },
+          {
+            data: 'Polish',
+            url: '#',
+          },
+        ],
+      },
+      {
+        title: {
+          data: 'Follow us',
+          priority: 3,
+        },
+        links: [
+          {
+            data: 'img/icons/in.svg',
+            url: '#',
+          },
+        ],
+      },
+      {
+        title: {
+          data: 'Contact',
+          priority: 3,
+        },
+        links: [
+          {
+            data: 'hello@zen.com',
+            url: 'hello@zen.com',
+          },
+        ],
       },
     ],
     info: {
-      logo: '',
+      footerLogo : {
+        source: 'img/icons/footer_logo.svg',
+        alterante: 'Brand Zen Company',
+      },
       texts: [
         'ZEN.COM is a licensed financial institution under the supervision of the Central Bank of Lithuania approved by European Banking Authority for 31 countries.',
         'Registration number of the company 304749651, VAT ID LT100011714916.',
@@ -168,8 +243,12 @@ const data = {
         'Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.',
         'Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.',
       ],
-      copyright: '',
-    }
+      copyright: {
+        url: 'https://ya.ru',
+        source: 'img/icons/copyright.svg',
+        alternate: 'copyright',
+      },
+    },
   },
 };
 
