@@ -1,14 +1,12 @@
+import Column from '../components/Column.js';
+import Info from '../components/Info.js';
+
 /**
  * @param {object} footer;
  * @returns {string};
  */
 
-import Column from '../components/Column.js';
-import Info from '../components/Info.js';
-
 const Footer = (footer) => {
-
-  // console.log(footer);
 
   const className = footer.name;
 

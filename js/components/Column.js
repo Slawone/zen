@@ -1,11 +1,11 @@
+import Title from './Title.js';
+import List from './List.js'
+
 /**
  * @param {object} column;
  * @param {string} parrentClassName;
  * @returns {string};
  */
-
-import Title from './Title.js';
-import List from './List.js'
 
 const Column = (column, parrentClassName) => {
 

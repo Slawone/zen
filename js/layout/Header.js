@@ -1,13 +1,12 @@
-/**
- * @param {object} header 
- * @returns {string}
- */
-
 import Logo from '../components/Logo.js';
 import MoonIcon from '../ui/MoonIcon.js';
 import BurgerIcon from '../ui/BurgerIcon.js';
 import Menu from '../components/Menu.js';
 
+/**
+ * @param {object} header 
+ * @returns {string}
+ */
 
 const Header = (header) => {
   const className = header.name;

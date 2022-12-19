@@ -1,6 +1,11 @@
 import Image from './Image.js';
 import Text from './Text.js';
 
+/**
+ * @param {object} info;
+ * @returns {string};
+ */
+
 const Info = (info) => {
   return `
     <div class="info">

@@ -37,6 +37,16 @@ const data = {
       source: './img/1.jpg',
       alternate: 'section download',
     },
+    buttons: [
+      {
+        url: 'https://apple.com',
+        type: 'apple',
+      },
+      {
+        url: 'https://google.com',
+        type: 'google',
+      },
+    ],
   },
   warranty: {
     name: 'warranty',
@@ -80,10 +90,7 @@ const data = {
       'We gave it a thought and made cashback way more friendly.',
       'Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account right after the purchase.',
     ],
-    button: {
-      data: 'Order a consultation',
-      type: 'button',
-    },
+    buttonText: 'Order a consultation',
   },
   clients: {
     name: 'clients',
