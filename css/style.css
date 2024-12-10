@@ -111,7 +111,9 @@ legend {
 
 :root {
   --main-color-black: #000;
+  --main-color-white: #ffffff;
   --header-border-color: #aaaaaa;
+  --footer-bg-color: #484848;
 
   --header-height-xl: 78px;
   --header-height-md: 50px;
@@ -336,6 +338,60 @@ body {
   text-align: center;
 }
 
+/* brands section*/
+.brands {
+  padding: 30px 0;
+}
+.brands__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* footer*/
+.footer {
+  padding: 30px 0;
+  background-color: var(--footer-bg-color);
+  color: var(--main-color-white);
+}
+.footer__columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.column__title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.column__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.column__link {
+  color: var(--main-color-white);
+  font-size: 14px;
+}
+.footer__content {
+  max-width: 650px;
+  margin-bottom: 20px;
+}
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer__copy {
+  font-size: 12px;
+}
+.footer__copy:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer__copyright {
+  text-align: center;
+}
+
 /* adaptive */
 @media screen and (width > 767px) {
   .hero__wrapper {
@@ -389,6 +445,16 @@ body {
     width: 225px;
     height: 52px;
   }
+  .brands__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer__columns {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (width > 959px) {
@@ -434,6 +500,12 @@ body {
   .cashback__button {
     font-size: 18px;
   }
+  .footer__columns {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .brands__wrapper {
+    gap: 40px;
+  }
 }
 @media screen and (width > 1139px) {
   .hero__wrapper {
@@ -455,9 +527,9 @@ body {
   .warranty__copy {
     font-size: 20px;
   }
-   .warranty__copy:last-child {
+  .warranty__copy:last-child {
     margin-bottom: 30px;
-   }
+  }
   .care__wrapper {
     gap: 110px;
   }
@@ -478,6 +550,19 @@ body {
     font-size: 20px;
     width: 282px;
     height: 67px;
+  }
+  .brands__wrapper {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+  .column__title {
+    font-size: 20px;
+  }
+  .column__list {
+    gap: 15px;
+  }
+  .footer__copy {
+    font-size: 12px;
   }
 }
 
